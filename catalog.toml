@@ -1,0 +1,12 @@
+[[plugin]]
+id           = "zapp/niri-win-icons"
+name         = "Niri Windows Icons"
+version      = "1.0.0"
+plugin_api   = 6
+author       = "zapp"
+license      = "MIT"
+dependencies = ["niri"]
+icon         = "puzzle"
+description  = "Shows active niri workspace windows in the bar."
+tags         = ["bar", "indicator", "niri"]
+
