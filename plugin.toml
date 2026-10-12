@@ -1,0 +1,27 @@
+id           = "zapp/niri-win-icons"
+name         = "Niri Windows Icons"
+version      = "1.0.0"
+plugin_api   = 6
+author       = "zapp"
+license      = "MIT"
+dependencies = ["niri"]
+icon         = "puzzle"
+deprecated   = false
+description  = "Shows active niri workspace windows in the bar."
+tags         = ["bar", "indicator", "niri"]
+
+[[widget]]
+id    = "win-icons"
+entry = "widget.luau"
+
+    [[widget.setting]]
+    key             =  "win_class"                                                              
+    type            =  "string_map"                                                                 
+    label_key       =  "settings.win_class.label"                                               
+    default         =  { "Alacritty" = "", "steam" = "", "firefox" = "", "libreoffice-writer"= "", "libreoffice-calc" = "", "mpv" = "󰨜", "org.pwmt.zathura" = "", "org.telegram.desktop" = "" }
+
+    [[widget.setting]]
+    key             =  "win_title_match"
+    type            =  "string_map"                                                                 
+    label_key       =  "settings.win_title_match.label"
+    default         =  { "Nvim" = "", "Home Assistant —" = "󰟐", "YouTube —" = "󰗃" }

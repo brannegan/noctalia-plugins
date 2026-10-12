@@ -1,0 +1,14 @@
+{
+  "plugin_description": "Shows opened windows on niri active workspace in the bar.",
+  "plugin_name": "Niri Windows Icons",
+  "settings": {
+    "win_class": {
+      "label": "Window class",
+      "description": "Window class to app icon mapping "
+    },
+    "win_title_match": {
+      "label": "Window title to match",
+      "description": "Window title (substring) to app icon mapping"
+    }
+  }
+}
